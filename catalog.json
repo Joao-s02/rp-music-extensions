@@ -7,7 +7,18 @@
       "version": "0.1.0",
       "description": "Biblioteca con filtros combinados y listas automáticas. Carátulas propias o mosaico desde Listas.",
       "path": "packages/biblioteca-viva.rpmx",
-      "sha256": "fa70f2401d6f63cad7f63e3a37be40c4a013bef6b9a0e68ec26ee2a32533b727"
+      "sha256": "fa70f2401d6f63cad7f63e3a37be40c4a013bef6b9a0e68ec26ee2a32533b727",
+      "versions": [
+        {
+          "id": "rp.biblioteca-viva",
+          "name": "Biblioteca viva",
+          "version": "0.1.1",
+          "description": "Biblioteca con filtros combinados y listas automáticas. Carátulas propias o mosaico desde Listas.",
+          "minAppVersion": "0.3.3",
+          "path": "previews/0.3.3/biblioteca-viva.rpmx",
+          "sha256": "a22ad5e2cd53c2f20e22c085b34144d88354159ebde1a58427ec7634aabd7a3d"
+        }
+      ]
     },
     {
       "id": "rp.pulso-nocturno",
@@ -33,6 +44,15 @@
           "minAppVersion": "0.3.2",
           "path": "previews/0.3.2/youtube-music.rpmx",
           "sha256": "abfeddcb462560ad49ef1ba0fcd461c070ef32c226eeca3a64ab6f25ebd86285"
+        },
+        {
+          "id": "rp.youtube-music",
+          "name": "YouTube Music experimental",
+          "version": "0.2.1",
+          "description": "Búsqueda y audio sin cuenta; añade acceso YT a la navegación. Requiere RP Music 0.3.2 Android.",
+          "minAppVersion": "0.3.3",
+          "path": "previews/0.3.3/youtube-music.rpmx",
+          "sha256": "1566ba5db1c30677d7c046f5043b9f4b9bc0b2403081179f18bf2374bdb944e7"
         }
       ]
     }

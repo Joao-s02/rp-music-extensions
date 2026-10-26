@@ -1,6 +1,6 @@
 # Extensiones de RP Music
 
-Catálogo público experimental API 2. Android y Windows: [RP Music 0.3.2-alpha.1](https://github.com/Joao-s02/rp_music/releases/tag/v0.3.2-alpha.1). La fuente inicial sigue siendo Android. Cada paquete indica su versión/plataforma compatible.
+Catálogo público experimental API 2. Android y Windows: [RP Music 0.3.3-alpha.1](https://github.com/Joao-s02/rp_music/releases/tag/v0.3.3-alpha.1). La fuente inicial sigue siendo Android. Cada paquete indica su versión/plataforma compatible.
 
 En la compilación compatible: Extensiones → Explorar repositorio → introducir https://github.com/Joao-s02/rp-music-extensions → Consultar → elegir una extensión → revisar permisos.
 
@@ -33,3 +33,10 @@ La reproducción sigue sin cuenta. Puede no estar disponible para ciertos temas/
 
 
 Publicación confirmada: RP Music 0.3.2-alpha.1 disponible para Android/Windows; la variante de fuente 0.2.0 está publicada en este catálogo y su hash remoto fue verificado. El paquete 0.1.0 se conserva para RP Music 0.3.1. No se adjuntan extensiones a la release de la app.
+
+## Actualizaciones para RP Music 0.3.3
+
+- previews/0.3.3/youtube-music.rpmx 0.2.1: icono de contorno playOutline, con color/tamaño del tema del anfitrión. Búsqueda/audio conservan el código verificado de 0.2.0. Requiere anfitrión 0.3.3.
+- previews/0.3.3/biblioteca-viva.rpmx 0.1.1: filtro que reconoce cada artista separado por comas, manteniendo compatibilidad con la etiqueta original. Requiere anfitrión 0.3.3 para las nuevas opciones del selector.
+
+El catálogo selecciona estas variantes en RP Music 0.3.3. Se conservan entradas para 0.3.1/0.3.2. Consulta el repositorio desde la app, elige Actualizar y revisa sus permisos; también puedes importar estos archivos manualmente. Fuente de Biblioteca viva actualizada aquí; los ejemplos heredados del principal no se copian ni actualizan.

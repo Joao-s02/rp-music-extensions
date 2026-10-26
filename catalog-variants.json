@@ -1,5 +1,9 @@
 {
   "rp.youtube-music": [
-    "previews/0.3.2/youtube-music.rpmx"
+    "previews/0.3.2/youtube-music.rpmx",
+    "previews/0.3.3/youtube-music.rpmx"
+  ],
+  "rp.biblioteca-viva": [
+    "previews/0.3.3/biblioteca-viva.rpmx"
   ]
 }

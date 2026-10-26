@@ -28,7 +28,8 @@ String run(String request) {
     final Map<String, dynamic> track = tracks[i] as Map<String, dynamic>;
     bool keep = true;
     if (field(filters, 'artist') != '' &&
-        field(filters, 'artist') != field(track, 'artist')) {
+        field(filters, 'artist') != field(track, 'artist') &&
+        !field(track, 'artist').split(',').map((name) => name.trim()).contains(field(filters, 'artist'))) {
       keep = false;
     }
     if (field(filters, 'album') != '' &&
