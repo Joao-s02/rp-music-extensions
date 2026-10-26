@@ -13,3 +13,12 @@ El catálogo no activa ni actualiza extensiones automáticamente. El SHA-256 com
 Fuentes Dart en `sources/`. Contrato y empaquetador en el [proyecto principal](https://github.com/Joao-s02/rp_music). Este repositorio distribuye ejemplos; no distribuye la aplicación ni sus datos musicales.
 
 Para regenerar el índice desde los paquetes: `python actualizar_catalogo.py`. Publica índice y paquetes en el mismo commit.
+
+
+## YouTube Music experimental · Android
+
+Nuevo paquete `packages/youtube-music.rpmx`, requiere **RP Music 0.3.1 o superior en Android**. La release pública 0.2.6 y las compilaciones 0.3.0 no incluyen el adaptador requerido. Instala primero la compilación compatible de prueba, consulta este repositorio, instala y acepta los permisos de internet de YouTube/reproducción; después pulsa **Abrir YouTube Music** en la tarjeta de Extensiones.
+
+Primera entrega: búsqueda de canciones del catálogo musical, reproducción solo audio sin cuenta, cola, pausa/avance/cambio de pista y carátula. El adaptador de red/audio reside en el anfitrión y el paquete programa el contrato de búsqueda. No es acceso HTTP arbitrario ni una extensión que pueda ejecutarse en cualquier versión de RP Music.
+
+Listas/favoritos/historial de esta fuente, cuentas, álbumes/artistas completos y Windows quedan pendientes. Integración no oficial experimental, sin garantía sobre todos los temas/regiones/redes. En emulador Android se verificaron búsqueda, dos canciones y controles, desactivación y pantalla apagada; falta validación en teléfono físico.

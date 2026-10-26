@@ -16,6 +16,14 @@
       "description": "Controles antes de la carátula y aleatorio que cambia de artista cuando es posible.",
       "path": "packages/pulso-nocturno.rpmx",
       "sha256": "4b60c9cabb33d7c62c5a6aea6fbd56ce7473630036d93e8b1bf5d28579f6d51a"
+    },
+    {
+      "id": "rp.youtube-music",
+      "name": "YouTube Music experimental",
+      "version": "0.1.0",
+      "description": "Busca canciones y reproduce audio sin cuenta. Primera prueba para Android con RP Music 0.3.1 o superior.",
+      "path": "packages/youtube-music.rpmx",
+      "sha256": "cdbca032bbe43bc75e6639e8e217dfba8dad09005375d27a3f4ae4bae4ebc1d6"
     }
   ]
 }
