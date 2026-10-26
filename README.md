@@ -40,3 +40,6 @@ Publicación confirmada: RP Music 0.3.2-alpha.1 disponible para Android/Windows;
 - previews/0.3.3/biblioteca-viva.rpmx 0.1.1: filtro que reconoce cada artista separado por comas, manteniendo compatibilidad con la etiqueta original. Requiere anfitrión 0.3.3 para las nuevas opciones del selector.
 
 El catálogo selecciona estas variantes en RP Music 0.3.3. Se conservan entradas para 0.3.1/0.3.2. Consulta el repositorio desde la app, elige Actualizar y revisa sus permisos; también puedes importar estos archivos manualmente. Fuente de Biblioteca viva actualizada aquí; los ejemplos heredados del principal no se copian ni actualizan.
+
+
+Publicación confirmada: [RP Music 0.3.3-alpha.1](https://github.com/Joao-s02/rp_music/releases/tag/v0.3.3-alpha.1) disponible. Fuente 0.2.1 y Biblioteca viva 0.1.1 publicadas en este catálogo y sus hashes remotos verificados; requieren anfitrión 0.3.3. Se mantienen variantes compatibles con 0.3.1/0.3.2. Las extensiones no se adjuntan a la release de la aplicación.
