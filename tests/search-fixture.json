@@ -1,0 +1,1 @@
+{"event": "source", "operation": "search", "stage": "search-result", "response": {"status": 200, "body": "{\"contents\": [{\"musicResponsiveListItemRenderer\": {\"playlistItemData\": {\"videoId\": \"abcdefghijk\"}, \"flexColumns\": [{\"musicResponsiveListItemFlexColumnRenderer\": {\"text\": {\"runs\": [{\"text\": \"Demo\"}]}}}]}}]}"}}

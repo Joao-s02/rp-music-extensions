@@ -23,7 +23,18 @@
       "version": "0.1.0",
       "description": "Busca canciones y reproduce audio sin cuenta. Primera prueba para Android con RP Music 0.3.1 o superior.",
       "path": "packages/youtube-music.rpmx",
-      "sha256": "cdbca032bbe43bc75e6639e8e217dfba8dad09005375d27a3f4ae4bae4ebc1d6"
+      "sha256": "cdbca032bbe43bc75e6639e8e217dfba8dad09005375d27a3f4ae4bae4ebc1d6",
+      "versions": [
+        {
+          "id": "rp.youtube-music",
+          "name": "YouTube Music experimental",
+          "version": "0.2.0",
+          "description": "Búsqueda y audio sin cuenta; añade acceso YT a la navegación. Requiere RP Music 0.3.2 Android.",
+          "minAppVersion": "0.3.2",
+          "path": "previews/0.3.2/youtube-music.rpmx",
+          "sha256": "abfeddcb462560ad49ef1ba0fcd461c070ef32c226eeca3a64ab6f25ebd86285"
+        }
+      ]
     }
   ]
 }

@@ -4,6 +4,14 @@ import json
 from pathlib import Path
 
 root = Path(__file__).resolve().parent
+def entry(path):
+    raw = path.read_bytes()
+    package = json.loads(raw.decode('utf-8'))
+    return {**{key: package[key] for key in ('id','name','version','description')},
+            'minAppVersion': package.get('minAppVersion','0.3.0'),
+            'path': path.relative_to(root).as_posix(), 'sha256': hashlib.sha256(raw).hexdigest()}
+
+variants = json.loads((root / 'catalog-variants.json').read_text(encoding='utf-8'))
 rows = []
 ids = set()
 for path in sorted((root / "packages").glob("*.rpmx")):
@@ -17,5 +25,11 @@ for path in sorted((root / "packages").glob("*.rpmx")):
     rows.append({**{key: package[key] for key in ("id", "name", "version", "description")},
                  "path": "packages/" + path.name,
                  "sha256": hashlib.sha256(raw).hexdigest()})
+for row in rows:
+    paths = variants.get(row['id'], [])
+    if paths:
+        row['versions'] = [entry(root / path) for path in paths]
+        if any(v['id'] != row['id'] for v in row['versions']):
+            raise ValueError('Variante con identidad diferente')
 (root / "catalog.json").write_text(json.dumps({"schemaVersion": 1, "extensions": rows}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(f"Catálogo actualizado: {len(rows)} extensiones")
