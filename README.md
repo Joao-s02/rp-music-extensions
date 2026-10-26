@@ -17,7 +17,7 @@ Para regenerar el índice desde los paquetes: `python actualizar_catalogo.py`. P
 
 ## Extensiones para fuentes de música en la nube · Android
 
-Primer paquete de prueba: `packages/youtube-music.rpmx`, requiere **RP Music 0.3.1 o superior en Android**. Instala primero la release compatible, consulta el catálogo e instala el paquete revisando sus permisos; después abre su fuente desde la tarjeta de Extensiones. La capacidad está habilitada mediante extensiones/adaptadores compatibles, no implica soporte de cualquier servicio.
+Primer paquete de prueba: `packages/youtube-music.rpmx`, requiere **RP Music 0.3.1 en Android** (para 0.3.2 usar la variante 0.2.0 indicada abajo). Instala primero la release compatible, consulta el catálogo e instala el paquete revisando sus permisos; después abre su fuente desde la tarjeta de Extensiones. La capacidad está habilitada mediante extensiones/adaptadores compatibles, no implica soporte de cualquier servicio.
 
 Antecedente del paquete 0.1.0 con RP Music 0.3.1: búsqueda de canciones del catálogo musical, reproducción solo audio sin cuenta, cola, pausa/avance/cambio de pista y carátula. El adaptador de red/audio reside en el anfitrión y el paquete programa el contrato de búsqueda. No es acceso HTTP arbitrario ni una extensión que pueda ejecutarse en cualquier versión de RP Music.
 
@@ -30,3 +30,6 @@ Listas/favoritos/historial de esta fuente, cuentas, álbumes/artistas completos 
 La entrada base del catálogo conserva 0.1.0 para RP Music 0.3.1; `versions` ofrece 0.2.0 a anfitriones compatibles. `catalog-variants.json` configura variantes y actualizar_catalogo.py calcula sus hashes. No sustituir la entrada base mientras haya clientes anteriores. Legacy conserva el prototipo y sus antiguas pruebas como antecedente, no como implementación vigente.
 
 La reproducción sigue sin cuenta. Puede no estar disponible para ciertos temas/regiones/redes; no se eluden requerimientos de cuenta. Windows, listas, favoritos e historial siguen pendientes. Pruebas concretas y límites se anotan en tests/RESULTADOS-0.2.0.md antes de distribuir.
+
+
+Publicación confirmada: RP Music 0.3.2-alpha.1 disponible para Android/Windows; la variante de fuente 0.2.0 está publicada en este catálogo y su hash remoto fue verificado. El paquete 0.1.0 se conserva para RP Music 0.3.1. No se adjuntan extensiones a la release de la app.
