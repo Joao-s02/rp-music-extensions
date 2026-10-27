@@ -6,6 +6,7 @@
       "name": "Biblioteca viva",
       "version": "0.1.0",
       "description": "Biblioteca con filtros combinados y listas automáticas. Carátulas propias o mosaico desde Listas.",
+      "minAppVersion": "0.3.0",
       "path": "packages/biblioteca-viva.rpmx",
       "sha256": "fa70f2401d6f63cad7f63e3a37be40c4a013bef6b9a0e68ec26ee2a32533b727",
       "versions": [
@@ -25,14 +26,25 @@
       "name": "Pulso nocturno",
       "version": "0.1.0",
       "description": "Controles antes de la carátula y aleatorio que cambia de artista cuando es posible.",
+      "minAppVersion": "0.3.0",
       "path": "packages/pulso-nocturno.rpmx",
       "sha256": "4b60c9cabb33d7c62c5a6aea6fbd56ce7473630036d93e8b1bf5d28579f6d51a"
+    },
+    {
+      "id": "rp.spotify-preview",
+      "name": "Spotify · vistas previas",
+      "version": "0.1.0",
+      "description": "Conexión experimental sin cuenta al reproductor público. Solo fragmentos disponibles por enlace; no audio completo ni búsqueda por nombre. Letras sin sincronización del fragmento.",
+      "minAppVersion": "0.3.4",
+      "path": "packages/spotify-preview.rpmx",
+      "sha256": "78329635c18fdc3e4106a3196e57d2cfc51dce144dc60aeaff01e17022ab29a9"
     },
     {
       "id": "rp.youtube-music",
       "name": "YouTube Music experimental",
       "version": "0.1.0",
       "description": "Busca canciones y reproduce audio sin cuenta. Primera prueba para Android con RP Music 0.3.1 o superior.",
+      "minAppVersion": "0.3.0",
       "path": "packages/youtube-music.rpmx",
       "sha256": "cdbca032bbe43bc75e6639e8e217dfba8dad09005375d27a3f4ae4bae4ebc1d6",
       "versions": [
@@ -53,6 +65,15 @@
           "minAppVersion": "0.3.3",
           "path": "previews/0.3.3/youtube-music.rpmx",
           "sha256": "1566ba5db1c30677d7c046f5043b9f4b9bc0b2403081179f18bf2374bdb944e7"
+        },
+        {
+          "id": "rp.youtube-music",
+          "name": "YouTube Music experimental",
+          "version": "0.3.0",
+          "description": "Audio sin cuenta, letras opcionales LRCLIB y descarga manual. Variante android. Experimental; requiere RP Music 0.3.4.",
+          "minAppVersion": "0.3.4",
+          "path": "previews/0.3.4/youtube-music-android.rpmx",
+          "sha256": "d62e49a593ba26c7ec43ce2502242bb4cfb01a1e0414533d281f4736b4cf2c90"
         }
       ]
     }

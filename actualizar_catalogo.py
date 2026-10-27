@@ -23,6 +23,7 @@ for path in sorted((root / "packages").glob("*.rpmx")):
         raise ValueError(f"API incompatible o id repetido: {path.name}")
     ids.add(package["id"])
     rows.append({**{key: package[key] for key in ("id", "name", "version", "description")},
+                 "minAppVersion": package.get("minAppVersion", "0.3.0"),
                  "path": "packages/" + path.name,
                  "sha256": hashlib.sha256(raw).hexdigest()})
 for row in rows:

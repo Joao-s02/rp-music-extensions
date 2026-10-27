@@ -29,6 +29,20 @@ String run(String request) {
   final Map<String,dynamic> input=jsonDecode(request) as Map<String,dynamic>;
   final String operation=input['operation'] as String;
   final String stage=input['stage'] as String;
+  if(operation=='lyrics' && stage=='start') {
+    final String title=Uri.encodeQueryComponent(input['title'] as String);
+    final String artist=Uri.encodeQueryComponent(input['artist'] as String);
+    final int duration=(input['durationMs'] as int) ~/ 1000;
+    return jsonEncode(<String,dynamic>{'next':'lyrics-result','request':<String,dynamic>{'url':'https://lrclib.net/api/get?track_name='+title+'&artist_name='+artist+(duration>0 ? '&duration='+duration.toString() : '')}});
+  }
+  if(operation=='lyrics' && stage=='lyrics-result') {
+    final Map<String,dynamic> response=input['response'] as Map<String,dynamic>;
+    if(response['status']==404) return jsonEncode(<String,dynamic>{'plainLyrics':''});
+    if(response['status']!=200) return jsonEncode(<String,dynamic>{'error':'No se pudo consultar la letra.'});
+    final Map<String,dynamic> data=jsonDecode(response['body'] as String) as Map<String,dynamic>;
+    if(data['instrumental']==true) return jsonEncode(<String,dynamic>{'plainLyrics':'Instrumental'});
+    return jsonEncode(<String,dynamic>{'syncedLyrics':data['syncedLyrics'],'plainLyrics':data['plainLyrics']});
+  }
   if(operation=='search' && stage=='start') {
     final String query=(input['query'] as String).trim();
     return jsonEncode(<String,dynamic>{'next':'search-result','request':<String,dynamic>{'method':'POST','url':'https://music.youtube.com/youtubei/v1/search?prettyPrint=false','headers':<String,dynamic>{'User-Agent':'Mozilla/5.0'},'body':<String,dynamic>{'context':<String,dynamic>{'client':<String,dynamic>{'clientName':'WEB_REMIX','clientVersion':'1.'+(input['date'] as String)+'.01.00','hl':'es','gl':'BO'}},'query':query,'params':'EgWKAQIIAWoMEA4QChADEAQQCRAF'}}});

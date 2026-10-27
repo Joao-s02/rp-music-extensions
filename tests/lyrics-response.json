@@ -1,0 +1,1 @@
+{"event": "source", "operation": "lyrics", "stage": "lyrics-result", "response": {"status": 200, "body": "{\"syncedLyrics\": \"[00:00.00]Letra de prueba\", \"plainLyrics\": \"Letra de prueba\"}"}}

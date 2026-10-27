@@ -1,0 +1,36 @@
+{
+  "apiVersion": 2,
+  "id": "rp.spotify-preview",
+  "name": "Spotify · vistas previas",
+  "version": "0.1.0",
+  "minAppVersion": "0.3.4",
+  "description": "Conexión experimental sin cuenta al reproductor público. Solo fragmentos disponibles por enlace; no audio completo ni búsqueda por nombre. Letras sin sincronización del fragmento.",
+  "permissions": [
+    "network.http",
+    "playback.control",
+    "navigation.add"
+  ],
+  "capabilities": [
+    "source"
+  ],
+  "sourceConfig": {
+    "name": "Spotify · vista previa",
+    "domains": [
+      "open.spotify.com",
+      "p.scdn.co",
+      "lrclib.net"
+    ],
+    "platforms": [
+      "android",
+      "windows"
+    ],
+    "navigation": {
+      "label": "Spotify",
+      "icon": "music",
+      "color": "#1DB954"
+    },
+    "description": "Spotify sin cuenta · solo vistas previas públicas. Pega el enlace de una canción. La letra corresponde a la canción completa y se muestra sin sincronización.",
+    "searchLabel": "Enlace de canción de Spotify"
+  },
+  "source": "import 'dart:convert';\nString run(String request) {\n  final Map<String,dynamic> input=jsonDecode(request) as Map<String,dynamic>;\n  final String operation=input['operation'] as String;\n  final String stage=input['stage'] as String;\n  if(operation=='lyrics' && stage=='start') {\n    final String title=Uri.encodeQueryComponent(input['title'] as String);\n    final String artist=Uri.encodeQueryComponent(input['artist'] as String);\n    return jsonEncode(<String,dynamic>{'next':'lyrics','request':<String,dynamic>{'url':'https://lrclib.net/api/get?track_name='+title+'&artist_name='+artist}});\n  }\n  if(operation=='lyrics' && stage=='lyrics') {\n    final Map<String,dynamic> response=input['response'] as Map<String,dynamic>;\n    if(response['status']!=200) return jsonEncode(<String,dynamic>{'plainLyrics':''});\n    final Map<String,dynamic> data=jsonDecode(response['body'] as String) as Map<String,dynamic>;\n    return jsonEncode(<String,dynamic>{'plainLyrics':data['plainLyrics']});\n  }\n  if(stage=='start') {\n    String id=operation=='resolve' ? input['id'] as String : (input['query'] as String).trim();\n    final int marker=id.indexOf('/track/');\n    if(marker>=0) {id=id.substring(marker+7);}\n    final int question=id.indexOf('?');\n    if(question>=0) id=id.substring(0,question);\n    final int slash=id.indexOf('/');\n    if(slash>=0) id=id.substring(0,slash);\n    if(id.startsWith('spotify:track:')) id=id.substring(14);\n    if(!RegExp(r'^[a-zA-Z0-9]{22}$').hasMatch(id)) return jsonEncode(<String,dynamic>{'error':'Pega un enlace público de canción de Spotify o su ID. Sin cuenta solo se ofrecen vistas previas, no canciones completas.'});\n    return jsonEncode(<String,dynamic>{'next':'embed','context':<String,dynamic>{'id':id},'request':<String,dynamic>{'url':'https://open.spotify.com/embed/track/'+id,'headers':<String,dynamic>{'User-Agent':'Mozilla/5.0'}}});\n  }\n  if(stage=='embed') {\n    final Map<String,dynamic> response=input['response'] as Map<String,dynamic>;\n    final String html=response['body'] as String;\n    final String marker='<script id=\"__NEXT_DATA__\" type=\"application/json\">';\n    final int begin=html.indexOf(marker);\n    if(response['status']!=200 || begin<0) return jsonEncode(<String,dynamic>{'error':'Spotify cambió su página pública o la canción no está disponible.'});\n    final String tail=html.substring(begin+marker.length);\n    final int end=tail.indexOf('</script>');\n    if(end<0) return jsonEncode(<String,dynamic>{'error':'Respuesta de Spotify incompatible.'});\n    final Map<String,dynamic> data=jsonDecode(tail.substring(0,end)) as Map<String,dynamic>;\n    final Map<String,dynamic> entity=data['props']['pageProps']['state']['data']['entity'] as Map<String,dynamic>;\n    final dynamic preview=entity['audioPreview'];\n    if(preview is! Map || preview['url'] is! String) return jsonEncode(<String,dynamic>{'error':'Esta canción no ofrece vista previa pública sin cuenta.'});\n    if(operation=='resolve') return jsonEncode(<String,dynamic>{'url':preview['url']});\n    String artists='';\n    final dynamic people=entity['artists'];\n    if(people is List) for(final dynamic person in people) {if(person is Map && person['name'] is String) {if(artists.isNotEmpty) artists+=', '; artists+=person['name'] as String;}}\n    final String id=(input['context'] as Map<String,dynamic>)['id'] as String;\n    return jsonEncode(<String,dynamic>{'tracks':<dynamic>[<String,dynamic>{'id':id,'title':entity['title'],'artist':artists,'album':'Vista previa pública'}]});\n  }\n  return jsonEncode(<String,dynamic>{'error':'Operación no disponible.'});\n}\n"
+}

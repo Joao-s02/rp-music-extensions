@@ -43,3 +43,15 @@ El catálogo selecciona estas variantes en RP Music 0.3.3. Se conservan entradas
 
 
 Publicación confirmada: [RP Music 0.3.3-alpha.1](https://github.com/Joao-s02/rp_music/releases/tag/v0.3.3-alpha.1) disponible. Fuente 0.2.1 y Biblioteca viva 0.1.1 publicadas en este catálogo y sus hashes remotos verificados; requieren anfitrión 0.3.3. Se mantienen variantes compatibles con 0.3.1/0.3.2. Las extensiones no se adjuntan a la release de la aplicación.
+
+## Preparación 0.3.4 — sin publicar
+
+Paquetes en previews/0.3.4, importación manual con app local 0.3.4+13. Android y Windows tienen manifiestos/IDs de YouTube separados, compartiendo sources/youtube_music.dart; requieren nuevo permiso storage.download para exportar y añaden LRCLIB como dominio para letras opcionales. No se modifica catálogo publicado.
+
+spotify-preview.rpmx 0.1.0 funciona con ambas plataformas sin cuenta, mediante embed público de Spotify. Pegar enlace de canción; únicamente audioPreview cuando existe, no audio completo ni búsqueda por nombre. Letras completas sin sincronización porque no conocemos el offset del fragmento. No se usa otro proveedor de audio simulando Spotify. Verificación y límites en tests/RESULTADOS-0.3.4.md.
+
+## Publicación autorizada para RP Music 0.3.4
+
+El catálogo ofrece YouTube Android 0.3.0 con letras LRCLIB y descarga manual, y Spotify · vistas previas 0.1.0 (un paquete Android/Windows). Ambos requieren anfitrión 0.3.4 y revisión de permisos. Versiones anteriores se conservan.
+
+Spotify: pegar enlace público de canción; solo fragmentos disponibles sin cuenta, sin búsqueda por nombre ni canciones completas. Letras planas sin sincronización con el fragmento. YouTube Windows permanece como [candidato manual](previews/0.3.4/youtube-music-windows.rpmx) con fallos de reproducción nativa conocidos, fuera del catálogo recomendado. Las pruebas de recepción de audio no acreditan escucha nativa ni el guardado mediante selector. Detalles/hashes en [resultados](tests/RESULTADOS-0.3.4.md).
