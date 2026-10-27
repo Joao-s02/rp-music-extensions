@@ -1,5 +1,17 @@
 # Extensiones de RP Music
 
+## Para RP Music 0.3.5 — publicación autorizada
+
+`previews/0.3.5/youtube-music-android.rpmx`: YouTube Android 0.4.0. Corrige extracción de artista/duración y búsqueda de letras mediante normalización, búsqueda alternativa y comprobación de versión/duración. Descargas consultan MusicBrainz/Cover Art Archive para etiquetas y portada; letras LRCLIB disponibles se incrustan por el anfitrión. Requiere RP Music 0.3.5.
+
+`previews/0.3.5/letras-locales.rpmx`: Letras locales 0.1.0. Proveedor de letras independiente de la fuente musical. Al seleccionar una canción local sin letra incrustada/caché, busca automáticamente. Solo guarda en soporte privado de la app; no escribe en música local. Requiere permisos library.read/network.http/lyrics.cache y app 0.3.5.
+
+Regenerar candidatos con `python build_0_3_5.py`. Combina `sources/metadata_lyrics.dart` con plantilla YouTube en `sources/youtube_music.dart`; genera fuentes completas youtube_enriched.dart y letras_locales.dart y sus paquetes. Intérprete real y comprobaciones en tests/verify_0_3_5.dart, ejecutado con el package_config del anfitrión. El catálogo omite Spotify por cancelación expresa; no borra paquetes/historia. Se conservan las variantes para clientes anteriores. No son adjuntos ni assets de la app principal.
+
+Instalar desde el catálogo o importar los archivos anteriores. Las extensiones siguen siendo experimentales: retesteo físico Android/selector pendiente, cobertura de letras y metadatos no garantizada. Pruebas en [resultados 0.3.5](tests/RESULTADOS-0.3.5-local.md).
+
+Los apartados siguientes describen el historial de 0.3.4 y entregas anteriores.
+
 Catálogo público experimental API 2. Android y Windows: [RP Music 0.3.4-alpha.1](https://github.com/Joao-s02/rp_music/releases/tag/v0.3.4-alpha.1). La fuente inicial sigue siendo Android. Cada paquete indica su versión/plataforma compatible.
 
 En la compilación compatible: Extensiones → Explorar repositorio → introducir https://github.com/Joao-s02/rp-music-extensions → Consultar → elegir una extensión → revisar permisos.

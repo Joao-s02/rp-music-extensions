@@ -19,6 +19,8 @@ for path in sorted((root / "packages").glob("*.rpmx")):
     if len(raw) > 128 * 1024:
         raise ValueError(f"Paquete demasiado grande: {path.name}")
     package = json.loads(raw.decode("utf-8"))
+    if 'spotify' in package['id']:
+        continue  # Cancelled by the author; retain historical package bytes.
     if package["apiVersion"] != 2 or package["id"] in ids:
         raise ValueError(f"API incompatible o id repetido: {path.name}")
     ids.add(package["id"])
@@ -32,5 +34,8 @@ for row in rows:
         row['versions'] = [entry(root / path) for path in paths]
         if any(v['id'] != row['id'] for v in row['versions']):
             raise ValueError('Variante con identidad diferente')
+local = root / 'previews/0.3.5/letras-locales.rpmx'
+if local.exists():
+    rows.append(entry(local))
 (root / "catalog.json").write_text(json.dumps({"schemaVersion": 1, "extensions": rows}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(f"Catálogo actualizado: {len(rows)} extensiones")

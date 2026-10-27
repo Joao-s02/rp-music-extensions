@@ -19,7 +19,51 @@ List<dynamic> songs(dynamic node,int depth) {
       final dynamic id=row['playlistItemData']['videoId'];
       final List<dynamic> columns=row['flexColumns'] as List<dynamic>;
       final String title=columns.isEmpty ? '' : columnText(columns[0]);
-      if(id is String && id.length==11 && title.isNotEmpty) output.add(<String,dynamic>{'id':id,'title':title,'artist':columns.length>1 ? columnText(columns[1]) : 'YouTube Music','artwork':'https://i.ytimg.com/vi/'+id+'/mqdefault.jpg'});
+      if(id is String && id.length==11 && title.isNotEmpty) {
+        String artist=''; String album=''; int duration=0;
+        for(final dynamic col in columns) {
+          final String column=columnText(col);
+          for(final String part in column.split(' • ')) {
+            final String time=part.trim();
+            if(RegExp(r'^\d{1,2}:\d{2}(:\d{2})?$').hasMatch(time)) {
+              int seconds=0;
+              for(final String digits in time.split(':')) {seconds=seconds*60+int.parse(digits);}
+              duration=seconds*1000;
+            }
+          }
+          final dynamic renderer=col is Map ? col['musicResponsiveListItemFlexColumnRenderer'] : null;
+          final dynamic runs=renderer is Map && renderer['text'] is Map ? renderer['text']['runs'] : null;
+          if(runs is List) {for(final dynamic run in runs) {
+            if(run is Map && run.containsKey('text') && run['text'] is String && run.containsKey('navigationEndpoint') && run['navigationEndpoint'] is Map) {
+              final Map endpoint=run['navigationEndpoint'] as Map;
+              if(endpoint.containsKey('browseEndpoint') && endpoint['browseEndpoint'] is Map) {
+                final Map browseEndpoint=endpoint['browseEndpoint'] as Map;
+                final dynamic rawBrowse=browseEndpoint.containsKey('browseId') ? browseEndpoint['browseId'] : '';
+                final String browse=rawBrowse is String ? rawBrowse : '';
+                if(browse.startsWith('UC')) {if(artist.isNotEmpty) artist+=', ';artist+=run['text'] as String;}
+                if(browse.startsWith('MPRE')) album=run['text'] as String;
+              }
+            }
+          }}
+        }
+        final dynamic fixed=row.containsKey('fixedColumns') ? row['fixedColumns'] : <dynamic>[];
+        if(fixed is List) {for(final dynamic col in fixed) {
+          final dynamic renderer=col is Map ? col['musicResponsiveListItemFixedColumnRenderer'] : null;
+          final dynamic runs=renderer is Map && renderer['text'] is Map ? renderer['text']['runs'] : null;
+          if(runs is List) {for(final dynamic run in runs) {
+            if(run is Map && run['text'] is String) {
+              final List<String> parts=(run['text'] as String).split(':');
+              if(RegExp(r'^\d{1,2}:\d{2}(:\d{2})?$').hasMatch(run['text'] as String)) {
+                int seconds=0;
+                for(final String part in parts) {seconds=seconds*60+int.parse(part);}
+                duration=seconds*1000;
+              }
+            }
+          }}
+        }}
+        if(artist.isEmpty && columns.length>1) artist=columnText(columns[1]).split(' • ')[0];
+        output.add(<String,dynamic>{'id':id,'title':title,'artist':artist.isEmpty ? 'YouTube Music' : artist,'album':album.isEmpty ? 'Sin álbum' : album,'durationMs':duration,'artwork':'https://i.ytimg.com/vi/'+id+'/mqdefault.jpg'});
+      }
     }
     for(final dynamic value in node.values) {output.addAll(songs(value,depth+1));if(output.length>=30) break;}
   } else if(node is List) {for(final dynamic value in node) {output.addAll(songs(value,depth+1));if(output.length>=30) break;}}

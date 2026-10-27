@@ -2,7 +2,8 @@
   "rp.youtube-music": [
     "previews/0.3.2/youtube-music.rpmx",
     "previews/0.3.3/youtube-music.rpmx",
-    "previews/0.3.4/youtube-music-android.rpmx"
+    "previews/0.3.4/youtube-music-android.rpmx",
+    "previews/0.3.5/youtube-music-android.rpmx"
   ],
   "rp.biblioteca-viva": [
     "previews/0.3.3/biblioteca-viva.rpmx"

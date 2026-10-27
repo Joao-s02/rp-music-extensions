@@ -31,15 +31,6 @@
       "sha256": "4b60c9cabb33d7c62c5a6aea6fbd56ce7473630036d93e8b1bf5d28579f6d51a"
     },
     {
-      "id": "rp.spotify-preview",
-      "name": "Spotify · vistas previas",
-      "version": "0.1.0",
-      "description": "Conexión experimental sin cuenta al reproductor público. Solo fragmentos disponibles por enlace; no audio completo ni búsqueda por nombre. Letras sin sincronización del fragmento.",
-      "minAppVersion": "0.3.4",
-      "path": "packages/spotify-preview.rpmx",
-      "sha256": "78329635c18fdc3e4106a3196e57d2cfc51dce144dc60aeaff01e17022ab29a9"
-    },
-    {
       "id": "rp.youtube-music",
       "name": "YouTube Music experimental",
       "version": "0.1.0",
@@ -74,8 +65,26 @@
           "minAppVersion": "0.3.4",
           "path": "previews/0.3.4/youtube-music-android.rpmx",
           "sha256": "d62e49a593ba26c7ec43ce2502242bb4cfb01a1e0414533d281f4736b4cf2c90"
+        },
+        {
+          "id": "rp.youtube-music",
+          "name": "YouTube Music experimental",
+          "version": "0.4.0",
+          "description": "YouTube Android con metadatos y letras automáticos para nuevas descargas. Experimental; requiere RP Music 0.3.5.",
+          "minAppVersion": "0.3.5",
+          "path": "previews/0.3.5/youtube-music-android.rpmx",
+          "sha256": "7caf7c3a08f5f7d1f3daf48d5ee384b71be8d087840859d8563686017ff88d2d"
         }
       ]
+    },
+    {
+      "id": "rp.letras-locales",
+      "name": "Letras locales",
+      "version": "0.1.0",
+      "description": "Busca letras automáticamente al reproducir canciones locales sin letra. Solo guarda en la app; no modifica tu música.",
+      "minAppVersion": "0.3.5",
+      "path": "previews/0.3.5/letras-locales.rpmx",
+      "sha256": "849e6868b1b964e4a6c0f9d85f4f0ef432ac4e36e87f29ccb443b24a4ecaf98c"
     }
   ]
 }
