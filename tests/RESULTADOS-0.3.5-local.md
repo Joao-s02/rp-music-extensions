@@ -12,3 +12,7 @@ YouTube Android 0.4.0 y Letras locales 0.1.0 requieren anfitrión 0.3.5. Sin pub
 Ejecutar desde el anfitrión con dart --packages=.dart_tool/package_config.json RUTA_A_ESTE_REPO/tests/verify_0_3_5.dart; añadir --youtube o --live para red. La prueba optativa genérica del anfitrión recibe rutas/metadatos por dart-define, no incorpora paquetes en producción.
 
 Pendiente: instalación/importación/selector y lectura de archivos personales en Android físico, cobertura de versiones/redes/servicios y revisión antes de publicar. Este candidato no corrige audio nativo YouTube Windows.
+
+## Publicación posterior confirmada
+
+El usuario autorizó publicar el 2026-10-27. Código/paquetes/catálogo en d0a007ef5bbc4f8fb22ed340c57fa7ddab2f5ee4; comprobación pública por ProgramCatalog 0.3.5 aprobada para los cuatro paquetes. App https://github.com/Joao-s02/rp_music/releases/tag/v0.3.5-alpha.1, código a7c9e11bcaf90c2fe0868d395a2d3d132169d4bf. Las menciones de ausencia de publicación anteriores describen la fase local, no el estado actual.

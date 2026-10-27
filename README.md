@@ -1,6 +1,6 @@
 # Extensiones de RP Music
 
-## Para RP Music 0.3.5 — publicación autorizada
+## Para RP Music 0.3.5
 
 `previews/0.3.5/youtube-music-android.rpmx`: YouTube Android 0.4.0. Corrige extracción de artista/duración y búsqueda de letras mediante normalización, búsqueda alternativa y comprobación de versión/duración. Descargas consultan MusicBrainz/Cover Art Archive para etiquetas y portada; letras LRCLIB disponibles se incrustan por el anfitrión. Requiere RP Music 0.3.5.
 
@@ -12,7 +12,7 @@ Instalar desde el catálogo o importar los archivos anteriores. Las extensiones 
 
 Los apartados siguientes describen el historial de 0.3.4 y entregas anteriores.
 
-Catálogo público experimental API 2. Android y Windows: [RP Music 0.3.4-alpha.1](https://github.com/Joao-s02/rp_music/releases/tag/v0.3.4-alpha.1). La fuente inicial sigue siendo Android. Cada paquete indica su versión/plataforma compatible.
+Catálogo público experimental API 2. Android y Windows: [RP Music 0.3.5-alpha.1](https://github.com/Joao-s02/rp_music/releases/tag/v0.3.5-alpha.1). La fuente inicial sigue siendo Android. Cada paquete indica su versión/plataforma compatible.
 
 En la compilación compatible: Extensiones → Explorar repositorio → introducir https://github.com/Joao-s02/rp-music-extensions → Consultar → elegir una extensión → revisar permisos.
 
@@ -69,3 +69,5 @@ El catálogo ofrece YouTube Android 0.3.0 con letras LRCLIB y descarga manual, y
 Spotify: pegar enlace público de canción; solo fragmentos disponibles sin cuenta, sin búsqueda por nombre ni canciones completas. Letras planas sin sincronización con el fragmento. YouTube Windows permanece como [candidato manual](previews/0.3.4/youtube-music-windows.rpmx) con fallos de reproducción nativa conocidos, fuera del catálogo recomendado. Las pruebas de recepción de audio no acreditan escucha nativa ni el guardado mediante selector. Detalles/hashes en [resultados](tests/RESULTADOS-0.3.4.md).
 
 Publicación confirmada: RP Music 0.3.4-alpha.1 / app 0.3.4+13, con los siete adjuntos Android/Windows/guías/hashes verificados. Catálogo y paquetes de este repositorio comparados con descargas públicas; Android 0.3.0 y Spotify vista previa 0.1.0 disponibles, versiones anteriores preservadas. Windows sigue siendo candidato manual con fallos nativos conocidos.
+
+Publicación 0.3.5 confirmada: https://github.com/Joao-s02/rp_music/releases/tag/v0.3.5-alpha.1. App 0.3.5+14; siete adjuntos verificados en el principal. Catálogo/paquetes de este repositorio públicos y comprobados desde la app 0.3.5. La publicación no sustituye retesteo físico Android ni corrige YouTube Windows.
