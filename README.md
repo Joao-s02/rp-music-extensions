@@ -1,6 +1,6 @@
 # Extensiones de RP Music
 
-Catálogo público experimental API 2. Android y Windows: [RP Music 0.3.3-alpha.1](https://github.com/Joao-s02/rp_music/releases/tag/v0.3.3-alpha.1). La fuente inicial sigue siendo Android. Cada paquete indica su versión/plataforma compatible.
+Catálogo público experimental API 2. Android y Windows: [RP Music 0.3.4-alpha.1](https://github.com/Joao-s02/rp_music/releases/tag/v0.3.4-alpha.1). La fuente inicial sigue siendo Android. Cada paquete indica su versión/plataforma compatible.
 
 En la compilación compatible: Extensiones → Explorar repositorio → introducir https://github.com/Joao-s02/rp-music-extensions → Consultar → elegir una extensión → revisar permisos.
 
@@ -55,3 +55,5 @@ spotify-preview.rpmx 0.1.0 funciona con ambas plataformas sin cuenta, mediante e
 El catálogo ofrece YouTube Android 0.3.0 con letras LRCLIB y descarga manual, y Spotify · vistas previas 0.1.0 (un paquete Android/Windows). Ambos requieren anfitrión 0.3.4 y revisión de permisos. Versiones anteriores se conservan.
 
 Spotify: pegar enlace público de canción; solo fragmentos disponibles sin cuenta, sin búsqueda por nombre ni canciones completas. Letras planas sin sincronización con el fragmento. YouTube Windows permanece como [candidato manual](previews/0.3.4/youtube-music-windows.rpmx) con fallos de reproducción nativa conocidos, fuera del catálogo recomendado. Las pruebas de recepción de audio no acreditan escucha nativa ni el guardado mediante selector. Detalles/hashes en [resultados](tests/RESULTADOS-0.3.4.md).
+
+Publicación confirmada: RP Music 0.3.4-alpha.1 / app 0.3.4+13, con los siete adjuntos Android/Windows/guías/hashes verificados. Catálogo y paquetes de este repositorio comparados con descargas públicas; Android 0.3.0 y Spotify vista previa 0.1.0 disponibles, versiones anteriores preservadas. Windows sigue siendo candidato manual con fallos nativos conocidos.

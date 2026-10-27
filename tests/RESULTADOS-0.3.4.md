@@ -17,4 +17,4 @@ Paquetes sin publicar y fuera del catálogo vigente. Requieren app local 0.3.4+1
 | youtube-music-android.rpmx | 8939 | d62e49a593ba26c7ec43ce2502242bb4cfb01a1e0414533d281f4736b4cf2c90 |
 | youtube-music-windows.rpmx | 9035 | 8a5b1cb0302b0a8aa1dc44b72cbd3d43d2f36b17fb80ff81480bc41f2febc9ed |
 
-Publicación autorizada por el usuario el 2026-10-27: catálogo ofrece YouTube Android 0.3.0 y Spotify vista previa 0.1.0 solo a anfitriones compatibles. Windows sigue fuera del catálogo recomendado; candidato manual con fallo explícito en manifiesto. La versión pública del anfitrión sigue siendo 0.3.3-alpha.1.
+Publicación autorizada por el usuario el 2026-10-27: catálogo ofrece YouTube Android 0.3.0 y Spotify vista previa 0.1.0 solo a anfitriones compatibles. Windows sigue fuera del catálogo recomendado; candidato manual con fallo explícito en manifiesto. Anfitrión 0.3.4-alpha.1 publicado con siete adjuntos y hashes verificados; no modifica los límites funcionales indicados.
