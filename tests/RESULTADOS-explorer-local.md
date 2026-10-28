@@ -1,0 +1,5 @@
+# Explorador 0.1.0 — comprobaciones locales 2026-10-28
+
+Paquete con ID nuevo y fuente separada; estable 0.4.0 intacta por SHA256 y build_explorer.py. Catálogo público/local sin cambios. Siete casos sintéticos en ProgramRuntime/dart_eval: búsqueda, browse, continuación, rechazo de enlace ajeno, parseo de entidades/pistas/token, exclusión de recomendaciones, letras heredadas. Consultas reales por artista/álbum/lista y apertura aprobadas. Una lista larga real dio páginas de 100+95 canciones; resultados de búsqueda varían y sondeos posteriores pueden no encontrar continuación entre candidatos. No se declara login ni sincronización, ni prueba física de audio/descargas de esta variante. Requiere anfitrión 0.3.7 local, cuya suite final pasa 114 pruebas/una red optativa omitida, análisis limpio y UI estrecha aprobada. No se suman ejecuciones repetidas ni casos del paquete a ese total. No publicado.
+
+Sondeo definitivo adicional aprobado: 100+100 pistas de lista pública larga, con ID público conservado en explorer-live-list.json.

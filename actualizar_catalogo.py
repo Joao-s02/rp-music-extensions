@@ -37,5 +37,8 @@ for row in rows:
 local = root / 'previews/0.3.5/letras-locales.rpmx'
 if local.exists():
     rows.append(entry(local))
+explorer = root / 'previews/explorer-0.1.0/youtube-explorer.rpmx'
+if explorer.exists():
+    rows.append(entry(explorer))
 (root / "catalog.json").write_text(json.dumps({"schemaVersion": 1, "extensions": rows}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(f"Catálogo actualizado: {len(rows)} extensiones")

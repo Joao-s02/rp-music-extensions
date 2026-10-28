@@ -71,3 +71,9 @@ Spotify: pegar enlace público de canción; solo fragmentos disponibles sin cuen
 Publicación confirmada: RP Music 0.3.4-alpha.1 / app 0.3.4+13, con los siete adjuntos Android/Windows/guías/hashes verificados. Catálogo y paquetes de este repositorio comparados con descargas públicas; Android 0.3.0 y Spotify vista previa 0.1.0 disponibles, versiones anteriores preservadas. Windows sigue siendo candidato manual con fallos nativos conocidos.
 
 Publicación 0.3.5 confirmada: https://github.com/Joao-s02/rp_music/releases/tag/v0.3.5-alpha.1. App 0.3.5+14; siete adjuntos verificados en el principal. Catálogo/paquetes de este repositorio públicos y comprobados desde la app 0.3.5. La publicación no sustituye retesteo físico Android ni corrige YouTube Windows.
+
+## YouTube Explorador 0.1.0 — para RP Music 0.3.7+
+
+Opción experimental separada de YouTube Android 0.4.0. Ambas pueden instalarse; elegir cuál controla Fuente o pulsar Usar esta fuente. La estable se conserva intacta. [Paquete Explorador](previews/explorer-0.1.0/youtube-explorer.rpmx) · [Uso y límites](previews/explorer-0.1.0/README.md).
+
+Añade exploración pública de artistas/álbumes/listas y paginación; permite importar álbum/lista cargados como copia local independiente, sin descargar audio automáticamente. No incluye cuenta Google ni sincronización; no promete discografía exhaustiva. Android solamente para reproducción del proveedor. No se adjunta a releases de la app. Verificaciones y límites en [resultados](tests/RESULTADOS-explorer-local.md).

@@ -85,6 +85,15 @@
       "minAppVersion": "0.3.5",
       "path": "previews/0.3.5/letras-locales.rpmx",
       "sha256": "849e6868b1b964e4a6c0f9d85f4f0ef432ac4e36e87f29ccb443b24a4ecaf98c"
+    },
+    {
+      "id": "rp.youtube-explorer",
+      "name": "YouTube Explorador",
+      "version": "0.1.0",
+      "description": "Variante experimental independiente con artistas, álbumes y listas públicas. Sin conexión de cuenta todavía.",
+      "minAppVersion": "0.3.7",
+      "path": "previews/explorer-0.1.0/youtube-explorer.rpmx",
+      "sha256": "75f155625bc759ac48bd7aae97d6570937eac06139886b204a7a3b38cf137348"
     }
   ]
 }
