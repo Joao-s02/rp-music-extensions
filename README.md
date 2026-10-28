@@ -1,10 +1,16 @@
 # Extensiones de RP Music
 
+## Windows y radio para app 0.3.10
+
+En catálogo: previews/0.3.10/youtube-music-windows.rpmx (API2,0.4.1), youtube-explorer-windows.rpmx (API2,0.1.0) y radio-internet.rpmx (API3,0.1.1). YouTube requiere app0.3.10; Radio conserva minApp0.3.9. Consultar el repositorio desde Extensiones e instalar en app compatible y revisar permisos. No vienen en APK/ZIP de la app.
+
+YouTube Windows y Explorador Windows son identidades independientes con código Dart conservado; fuentes/paquetes Android anteriores intactos. Audio nativo Windows, controles y revocación comprobados con el nuevo motor de la app. Radio renueva URL/cuenta clic en una sola consulta; tiempo de inicio depende de emisora/red. Regenerar solo candidatos mediante build_windows_0310.py. [Resultados y límites](tests/RESULTADOS-WINDOWS-0.3.10.md).
+
 ## Extensiones JavaScript para RP Music 0.3.9
 
 En catálogo: Explorador musical y Radio por internet, ambos 0.1.0/minAppVersion 0.3.9. Consultar el repositorio desde RP Music0.3.9 e instalar revisando permisos; también se pueden importar previews/js-music-0.1.0/explorador-musical.rpmx y radio-internet.rpmx. No se incluyen en APK/ZIP de RP Music; API 2 y paquetes publicados previos intactos.
 
-Explorador musical: YouTube Music público sin cuenta, búsqueda por canciones/artistas/álbumes/listas, apertura/páginas/Atrás, continuación remota y resolución AAC. No incluye importación/descarga/cuentas; no declara corregido audio nativo Windows.
+Explorador musical: YouTube Music público sin cuenta, búsqueda por canciones/artistas/álbumes/listas, apertura/páginas/Atrás, continuación remota y resolución AAC. No incluye importación/descarga/cuentas; audio nativo Windows comprobado desde app 0.3.10.
 
 Radio por internet: Radio Browser, búsqueda por nombre/país/etiqueta, populares/páginas, hasta 30 favoritas privadas y renovación por UUID antes de escuchar. Solo HTTPS MP3/AAC; no HLS/listas remotas. Permiso network.stream separado para audio de emisoras de dominios variables. Disponibilidad depende de cada estación y red.
 

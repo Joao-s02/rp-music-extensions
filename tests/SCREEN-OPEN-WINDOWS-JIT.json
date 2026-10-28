@@ -1,0 +1,147 @@
+{
+  "platform": "windows",
+  "mode": "flutter-test JIT; not Android/release",
+  "packages": [
+    {
+      "id": "rp.laboratorio-js",
+      "runs": [
+        {
+          "totalMs": 121.083,
+          "registryWrites": 2,
+          "saveMs": 13.915,
+          "directRuntimeMs": 2.609,
+          "registryBytes": 87150
+        },
+        {
+          "totalMs": 20.31,
+          "registryWrites": 2,
+          "saveMs": 14.551,
+          "directRuntimeMs": 2.469,
+          "registryBytes": 87150
+        },
+        {
+          "totalMs": 21.161,
+          "registryWrites": 2,
+          "saveMs": 16.061,
+          "directRuntimeMs": 2.685,
+          "registryBytes": 87150
+        },
+        {
+          "totalMs": 17.647,
+          "registryWrites": 2,
+          "saveMs": 12.818,
+          "directRuntimeMs": 2.373,
+          "registryBytes": 87150
+        },
+        {
+          "totalMs": 18.791,
+          "registryWrites": 2,
+          "saveMs": 13.1,
+          "directRuntimeMs": 1.794,
+          "registryBytes": 87150
+        },
+        {
+          "totalMs": 17.866,
+          "registryWrites": 2,
+          "saveMs": 12.669,
+          "directRuntimeMs": 2.049,
+          "registryBytes": 87150
+        }
+      ]
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "runs": [
+        {
+          "totalMs": 17.788,
+          "registryWrites": 2,
+          "saveMs": 12.618,
+          "directRuntimeMs": 2.764,
+          "registryBytes": 87239
+        },
+        {
+          "totalMs": 16.607,
+          "registryWrites": 2,
+          "saveMs": 11.896,
+          "directRuntimeMs": 2.607,
+          "registryBytes": 87239
+        },
+        {
+          "totalMs": 15.911,
+          "registryWrites": 2,
+          "saveMs": 11.869,
+          "directRuntimeMs": 3.615,
+          "registryBytes": 87239
+        },
+        {
+          "totalMs": 16.827,
+          "registryWrites": 2,
+          "saveMs": 12.02,
+          "directRuntimeMs": 2.558,
+          "registryBytes": 87239
+        },
+        {
+          "totalMs": 15.073,
+          "registryWrites": 2,
+          "saveMs": 11.105,
+          "directRuntimeMs": 2.43,
+          "registryBytes": 87239
+        },
+        {
+          "totalMs": 17.29,
+          "registryWrites": 2,
+          "saveMs": 12.469,
+          "directRuntimeMs": 2.301,
+          "registryBytes": 87239
+        }
+      ]
+    },
+    {
+      "id": "rp.radio-internet-js",
+      "runs": [
+        {
+          "totalMs": 16.241,
+          "registryWrites": 2,
+          "saveMs": 12.507,
+          "directRuntimeMs": 2.14,
+          "registryBytes": 87371
+        },
+        {
+          "totalMs": 17.947,
+          "registryWrites": 2,
+          "saveMs": 12.553,
+          "directRuntimeMs": 3.025,
+          "registryBytes": 87371
+        },
+        {
+          "totalMs": 18.281,
+          "registryWrites": 2,
+          "saveMs": 14.071,
+          "directRuntimeMs": 2.74,
+          "registryBytes": 87371
+        },
+        {
+          "totalMs": 22.064,
+          "registryWrites": 2,
+          "saveMs": 14.832,
+          "directRuntimeMs": 2.4,
+          "registryBytes": 87371
+        },
+        {
+          "totalMs": 17.689,
+          "registryWrites": 2,
+          "saveMs": 13.069,
+          "directRuntimeMs": 3.127,
+          "registryBytes": 87371
+        },
+        {
+          "totalMs": 16.968,
+          "registryWrites": 2,
+          "saveMs": 12.828,
+          "directRuntimeMs": 2.073,
+          "registryBytes": 87371
+        }
+      ]
+    }
+  ]
+}

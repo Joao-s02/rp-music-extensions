@@ -47,5 +47,12 @@ for name in ('explorador-musical.rpmx', 'radio-internet.rpmx'):
     path = root / 'previews/js-music-0.1.0' / name
     if path.exists():
         rows.append(entry(path))
+for row in rows:
+    if row['id'] == 'rp.radio-internet-js':
+        row['versions'] = [entry(root / 'previews/0.3.10/radio-internet.rpmx')]
+for name in ('youtube-music-windows.rpmx', 'youtube-explorer-windows.rpmx'):
+    rows.append(entry(root / 'previews/0.3.10' / name))
+if len({row['id'] for row in rows}) != len(rows):
+    raise ValueError('Identidad repetida en catálogo')
 (root / "catalog.json").write_text(json.dumps({"schemaVersion": 1, "extensions": rows}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(f"Catálogo actualizado: {len(rows)} extensiones")
