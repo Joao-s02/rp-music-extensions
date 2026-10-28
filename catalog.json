@@ -74,6 +74,15 @@
           "minAppVersion": "0.3.5",
           "path": "previews/0.3.5/youtube-music-android.rpmx",
           "sha256": "7caf7c3a08f5f7d1f3daf48d5ee384b71be8d087840859d8563686017ff88d2d"
+        },
+        {
+          "id": "rp.youtube-music",
+          "name": "YouTube Music experimental",
+          "version": "0.5.0",
+          "description": "Metadatos de álbum coherentes y fotos de artistas con caché privada. App 0.3.11. Candidato local.",
+          "minAppVersion": "0.3.11",
+          "path": "previews/0.3.11/youtube-music-android.rpmx",
+          "sha256": "b14c080affa9656c3388c4f1aebebf0e5bbc359d5d38bde31b3d269e94d6809b"
         }
       ]
     },
@@ -93,7 +102,18 @@
       "description": "Variante experimental independiente con artistas, álbumes y listas públicas. Sin conexión de cuenta todavía.",
       "minAppVersion": "0.3.7",
       "path": "previews/explorer-0.1.0/youtube-explorer.rpmx",
-      "sha256": "75f155625bc759ac48bd7aae97d6570937eac06139886b204a7a3b38cf137348"
+      "sha256": "75f155625bc759ac48bd7aae97d6570937eac06139886b204a7a3b38cf137348",
+      "versions": [
+        {
+          "id": "rp.youtube-explorer",
+          "name": "YouTube Explorador",
+          "version": "0.2.0",
+          "description": "Metadatos de álbum coherentes y fotos de artistas con caché privada. App 0.3.11. Candidato local.",
+          "minAppVersion": "0.3.11",
+          "path": "previews/0.3.11/youtube-explorer.rpmx",
+          "sha256": "17bd5a9086a9e17ed86c4e16bd0b40d9e57a98c92d8078fe5e6520d1bb1811dc"
+        }
+      ]
     },
     {
       "id": "rp.laboratorio-js",
@@ -140,7 +160,18 @@
       "description": "Windows: fuente Dart/API2 para RP Music0.3.10 con motor de audio actualizado. Candidato local en verificación.",
       "minAppVersion": "0.3.10",
       "path": "previews/0.3.10/youtube-music-windows.rpmx",
-      "sha256": "bd44da476da173b2f2167e2b9899e61d4264b260b986e8e86dd72a1cbbd91842"
+      "sha256": "bd44da476da173b2f2167e2b9899e61d4264b260b986e8e86dd72a1cbbd91842",
+      "versions": [
+        {
+          "id": "rp.youtube-music-windows",
+          "name": "YouTube Windows",
+          "version": "0.5.0",
+          "description": "Metadatos de álbum coherentes y fotos de artistas con caché privada. App 0.3.11. Candidato local.",
+          "minAppVersion": "0.3.11",
+          "path": "previews/0.3.11/youtube-music-windows.rpmx",
+          "sha256": "4be45ea7cf3629589d59e6a4b0408bc74e6727f5b47556b36e918f7d63533587"
+        }
+      ]
     },
     {
       "id": "rp.youtube-explorer-windows",
@@ -149,7 +180,18 @@
       "description": "Windows: fuente Dart/API2 para RP Music0.3.10 con motor de audio actualizado. Candidato local en verificación.",
       "minAppVersion": "0.3.10",
       "path": "previews/0.3.10/youtube-explorer-windows.rpmx",
-      "sha256": "3370d4d31ff85545b218f2872d641e469e34d77c45a2facef69c1014dad62e89"
+      "sha256": "3370d4d31ff85545b218f2872d641e469e34d77c45a2facef69c1014dad62e89",
+      "versions": [
+        {
+          "id": "rp.youtube-explorer-windows",
+          "name": "YouTube Explorador Windows",
+          "version": "0.2.0",
+          "description": "Metadatos de álbum coherentes y fotos de artistas con caché privada. App 0.3.11. Candidato local.",
+          "minAppVersion": "0.3.11",
+          "path": "previews/0.3.11/youtube-explorer-windows.rpmx",
+          "sha256": "bede57134005eb48dac2a8d1d1dd47e486e39322a5731c3e0b25013428fc7fbd"
+        }
+      ]
     }
   ]
 }

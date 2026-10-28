@@ -3,9 +3,19 @@
     "previews/0.3.2/youtube-music.rpmx",
     "previews/0.3.3/youtube-music.rpmx",
     "previews/0.3.4/youtube-music-android.rpmx",
-    "previews/0.3.5/youtube-music-android.rpmx"
+    "previews/0.3.5/youtube-music-android.rpmx",
+    "previews/0.3.11/youtube-music-android.rpmx"
   ],
   "rp.biblioteca-viva": [
     "previews/0.3.3/biblioteca-viva.rpmx"
+  ],
+  "rp.youtube-music-windows": [
+    "previews/0.3.11/youtube-music-windows.rpmx"
+  ],
+  "rp.youtube-explorer": [
+    "previews/0.3.11/youtube-explorer.rpmx"
+  ],
+  "rp.youtube-explorer-windows": [
+    "previews/0.3.11/youtube-explorer-windows.rpmx"
   ]
 }

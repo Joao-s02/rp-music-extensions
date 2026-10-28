@@ -52,6 +52,11 @@ for row in rows:
         row['versions'] = [entry(root / 'previews/0.3.10/radio-internet.rpmx')]
 for name in ('youtube-music-windows.rpmx', 'youtube-explorer-windows.rpmx'):
     rows.append(entry(root / 'previews/0.3.10' / name))
+for row in rows:
+    if row['id'] in variants:
+        row['versions'] = [entry(root / path) for path in variants[row['id']]]
+        if any(v['id'] != row['id'] for v in row['versions']):
+            raise ValueError('Variante con identidad diferente')
 if len({row['id'] for row in rows}) != len(rows):
     raise ValueError('Identidad repetida en catálogo')
 (root / "catalog.json").write_text(json.dumps({"schemaVersion": 1, "extensions": rows}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

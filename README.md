@@ -1,5 +1,10 @@
 # Extensiones de RP Music
 
+## Para RP Music0.3.11
+
+En previews/0.3.11: YouTube Android/Windows0.5.0 y Explorador Android/Windows0.2.0, minApp0.3.11. Metadatos priorizan álbum de origen, no toman edición desde letras; colección conocida evita buscar otra edición por canción. Encabezados con portada/artista; consulta de retratos con library.read aceptado, administrada y cacheada por el anfitrión. API2 conservada. Regenerar mediante build_0311.py; pruebas en tests/verify_0311.dart y escenario de exportación genérica. En catálogo como actualizaciones compatibles; variantes/paquetes anteriores preservados.
+
+
 ## Windows y radio para app 0.3.10
 
 En catálogo: previews/0.3.10/youtube-music-windows.rpmx (API2,0.4.1), youtube-explorer-windows.rpmx (API2,0.1.0) y radio-internet.rpmx (API3,0.1.1). YouTube requiere app0.3.10; Radio conserva minApp0.3.9. Consultar el repositorio desde Extensiones e instalar en app compatible y revisar permisos. No vienen en APK/ZIP de la app.
