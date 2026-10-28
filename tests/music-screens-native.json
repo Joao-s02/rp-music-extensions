@@ -1,0 +1,113 @@
+{
+  "packages": [
+    "dist/extensions-repository/previews/js-music-0.1.0/explorador-musical.rpmx",
+    "dist/extensions-repository/previews/js-music-0.1.0/radio-internet.rpmx"
+  ],
+  "report": "dist/extensions-repository/tests/RESULTADOS-js-music-native.json",
+  "steps": [
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "search:artist",
+      "fields": {
+        "query": "Luis Miguel"
+      },
+      "nonempty": "items"
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "item:",
+      "indexWhere": {
+        "list": "items",
+        "field": "kind",
+        "value": "artist"
+      },
+      "nonempty": "items"
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "search:album",
+      "fields": {
+        "query": "Luis Miguel"
+      },
+      "nonempty": "items"
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "item:",
+      "indexWhere": {
+        "list": "items",
+        "field": "kind",
+        "value": "album"
+      },
+      "nonempty": "items"
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "search:playlist",
+      "fields": {
+        "query": "Luis Miguel"
+      },
+      "nonempty": "items"
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "item:",
+      "indexWhere": {
+        "list": "items",
+        "field": "kind",
+        "value": "playlist"
+      },
+      "nonempty": "items"
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "search:song",
+      "fields": {
+        "query": "Luis Miguel"
+      },
+      "nonempty": "items"
+    },
+    {
+      "action": "item:",
+      "indexWhere": {
+        "field": "kind",
+        "list": "items",
+        "value": "song"
+      },
+      "id": "rp.explorador-musical-js",
+      "remote": true
+    },
+    {
+      "nonempty": "cursor",
+      "action": "search:playlist",
+      "id": "rp.explorador-musical-js",
+      "fields": {
+        "query": "https://music.youtube.com/playlist?list=PL0GvsLQil0MmYC96KEs_7dTNsLm1PS6JX"
+      }
+    },
+    {
+      "changed": "cursor",
+      "nonempty": "items",
+      "action": "more",
+      "id": "rp.explorador-musical-js"
+    },
+    {
+      "id": "rp.radio-internet-js",
+      "action": "search",
+      "fields": {
+        "name": "Radio Swiss Pop"
+      },
+      "nonempty": "items"
+    },
+    {
+      "id": "rp.radio-internet-js",
+      "action": "fav:0",
+      "nonempty": "favorites"
+    },
+    {
+      "id": "rp.radio-internet-js",
+      "action": "play:0",
+      "listen": true
+    }
+  ]
+}

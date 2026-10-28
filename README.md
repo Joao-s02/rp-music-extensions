@@ -1,5 +1,15 @@
 # Extensiones de RP Music
 
+## Extensiones JavaScript para RP Music 0.3.9
+
+En catálogo: Explorador musical y Radio por internet, ambos 0.1.0/minAppVersion 0.3.9. Consultar el repositorio desde RP Music0.3.9 e instalar revisando permisos; también se pueden importar previews/js-music-0.1.0/explorador-musical.rpmx y radio-internet.rpmx. No se incluyen en APK/ZIP de RP Music; API 2 y paquetes publicados previos intactos.
+
+Explorador musical: YouTube Music público sin cuenta, búsqueda por canciones/artistas/álbumes/listas, apertura/páginas/Atrás, continuación remota y resolución AAC. No incluye importación/descarga/cuentas; no declara corregido audio nativo Windows.
+
+Radio por internet: Radio Browser, búsqueda por nombre/país/etiqueta, populares/páginas, hasta 30 favoritas privadas y renovación por UUID antes de escuchar. Solo HTTPS MP3/AAC; no HLS/listas remotas. Permiso network.stream separado para audio de emisoras de dominios variables. Disponibilidad depende de cada estación y red.
+
+Regenerar solo los nuevos candidatos con python build_music_screens.py. Fuentes específicas en sources/music_screens_common.js, explorador_musical.js y radio_internet.js; pruebas con motor real en tests/music_screens_test.dart. Sonda genérica nativa del anfitrión consume escenario externo tests/music-screens-native.json. Evidencia y límites en tests/RESULTADOS-js-music.md; instalación detallada en la guía local 0.3.9 de RP Music.
+
 ## Para RP Music 0.3.5
 
 `previews/0.3.5/youtube-music-android.rpmx`: YouTube Android 0.4.0. Corrige extracción de artista/duración y búsqueda de letras mediante normalización, búsqueda alternativa y comprobación de versión/duración. Descargas consultan MusicBrainz/Cover Art Archive para etiquetas y portada; letras LRCLIB disponibles se incrustan por el anfitrión. Requiere RP Music 0.3.5.

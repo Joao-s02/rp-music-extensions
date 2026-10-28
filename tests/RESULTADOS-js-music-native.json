@@ -1,0 +1,103 @@
+{
+  "platform": "windows",
+  "steps": [
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "search:artist",
+      "error": false,
+      "message": "",
+      "count": 13
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "item:0",
+      "error": false,
+      "message": "",
+      "count": 50
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "search:album",
+      "error": false,
+      "message": "",
+      "count": 20
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "item:0",
+      "error": false,
+      "message": "",
+      "count": 1
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "search:playlist",
+      "error": false,
+      "message": "",
+      "count": 20
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "item:0",
+      "error": false,
+      "message": "",
+      "count": 13
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "search:song",
+      "error": false,
+      "message": "",
+      "count": 20
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "item:0",
+      "error": false,
+      "message": "Se solicitó la reproducción de La Incondicional",
+      "remoteResolved": true,
+      "count": 20
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "search:playlist",
+      "error": false,
+      "message": "",
+      "count": 100
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "action": "more",
+      "error": false,
+      "message": "",
+      "count": 100
+    },
+    {
+      "id": "rp.radio-internet-js",
+      "action": "search",
+      "error": false,
+      "message": "Solo se muestran emisoras HTTPS MP3/AAC compatibles.",
+      "count": 2
+    },
+    {
+      "id": "rp.radio-internet-js",
+      "action": "fav:0",
+      "error": false,
+      "message": "",
+      "count": 2
+    },
+    {
+      "id": "rp.radio-internet-js",
+      "action": "play:0",
+      "error": false,
+      "message": "Se solicitó la reproducción de Radio Swiss Pop (AAC 192)",
+      "count": 2
+    }
+  ],
+  "nativeAudio": true,
+  "title": "Radio Swiss Pop (AAC 192)",
+  "positionMs": 2167,
+  "revocationStopped": true,
+  "ok": true,
+  "errors": []
+}

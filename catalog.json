@@ -103,6 +103,24 @@
       "minAppVersion": "0.3.8",
       "path": "previews/js-lab-0.1.0/laboratorio-js.rpmx",
       "sha256": "7da54989230ac77f2d7cb4b0d089913036ed8f35dbab9e2ab402ef8bcb3b8ad6"
+    },
+    {
+      "id": "rp.explorador-musical-js",
+      "name": "Explorador musical",
+      "version": "0.1.0",
+      "description": "Explora artistas, álbumes, listas y canciones públicas de YouTube Music. Sin cuenta; audio experimental.",
+      "minAppVersion": "0.3.9",
+      "path": "previews/js-music-0.1.0/explorador-musical.rpmx",
+      "sha256": "62c330d24ba7bdc64dfe6ea0d98b125cb2632c74017b158bd7f42dc37382e61e"
+    },
+    {
+      "id": "rp.radio-internet-js",
+      "name": "Radio por internet",
+      "version": "0.1.0",
+      "description": "Busca emisoras HTTPS MP3/AAC de Radio Browser, filtra por país/género y guarda favoritas privadas.",
+      "minAppVersion": "0.3.9",
+      "path": "previews/js-music-0.1.0/radio-internet.rpmx",
+      "sha256": "788e84a0da3fa1419afbbdadc93f77b853af7dec2a18756e028c1b6f8b0069a8"
     }
   ]
 }

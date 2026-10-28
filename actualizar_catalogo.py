@@ -43,5 +43,9 @@ if explorer.exists():
 js_lab = root / 'previews/js-lab-0.1.0/laboratorio-js.rpmx'
 if js_lab.exists():
     rows.append(entry(js_lab))
+for name in ('explorador-musical.rpmx', 'radio-internet.rpmx'):
+    path = root / 'previews/js-music-0.1.0' / name
+    if path.exists():
+        rows.append(entry(path))
 (root / "catalog.json").write_text(json.dumps({"schemaVersion": 1, "extensions": rows}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(f"Catálogo actualizado: {len(rows)} extensiones")
