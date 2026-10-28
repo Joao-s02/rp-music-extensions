@@ -1,0 +1,19 @@
+{
+  "apiVersion": 3,
+  "engine": "javascript",
+  "id": "rp.laboratorio-js",
+  "name": "Laboratorio JS",
+  "version": "0.1.0",
+  "minAppVersion": "0.3.8",
+  "description": "Prueba experimental de pantallas y navegación definidas por JavaScript. Motor Dart conservado; sin red.",
+  "permissions": [
+    "navigation.add",
+    "storage.private",
+    "library.read",
+    "playback.control"
+  ],
+  "capabilities": [
+    "screen"
+  ],
+  "source": "function text(value, title) { return {type: 'text', text: String(value), style: title ? 'title' : 'body'}; }\nfunction button(label, action) { return {type: 'button', label, action}; }\nfunction column(children) { return {type: 'column', children}; }\nfunction card(children) { return {type: 'card', children}; }\nfunction run(input) {\n  const state = Object.assign({page:'home', count:0, name:'', query:''}, input.state || {});\n  const action = input.action || 'open';\n  const fields = input.fields || {};\n  const tracks = Array.isArray(input.tracks) ? input.tracks : [];\n  let play;\n  if (action === 'home') state.page='home';\n  if (action === 'panel') state.page='panel';\n  if (action === 'library') state.page='library';\n  if (action === 'plus') state.count++;\n  if (action === 'minus') state.count--;\n  if (action === 'reset') state.count=0;\n  if (action === 'name') state.name=String(fields.nickname || '').trim().slice(0,80);\n  if (action === 'search') state.query=String(fields.search || '').trim().slice(0,80);\n  if (action.startsWith('play:')) {\n    const id=action.slice(5);\n    if(tracks.some(t=>t.id===id)) play=id;\n  }\n  let content=[];\n  if(state.page==='home') {\n    content=[text('Laboratorio JavaScript',true),text('Esta pantalla, sus páginas y las acciones se definen en la extensión.'),\n      card([text('Hola'+(state.name ? ', '+state.name : '')+' 👋'),text('Prueba un formulario con estado persistente.'),\n        {type:'input',id:'nickname',label:'Tu apodo',value:state.name},button('Guardar saludo','name')]),\n      button('Abrir mi panel','panel'),button('Explorar mi biblioteca','library'),\n      text('El motor Dart sigue disponible para YouTube estable y Explorador.')];\n  } else if(state.page==='panel') {\n    content=[text('Mi panel personalizado',true),text('Contador: '+state.count),\n      {type:'row',children:[button('Sumar','plus'),button('Restar','minus'),button('Reiniciar contador','reset')]},\n      card([text('Puedes cerrar y abrir: el contador y el saludo se guardan solo en RP Music.')]),button('Volver al inicio','home')];\n  } else {\n    const query=state.query.toLowerCase();\n    const matches=tracks.filter(t=>(t.title+' '+t.artist).toLowerCase().includes(query));\n    content=[text('Biblioteca desde JavaScript',true),text('Vista autorizada de hasta 500 canciones locales; se muestran hasta 8 coincidencias.'),\n      {type:'input',id:'search',label:'Título o artista',value:state.query},button('Buscar en mi música','search'),\n      text(matches.length+' coincidencias'),\n      ...matches.slice(0,8).map(t=>card([text(t.title),text(t.artist),button('Escuchar '+t.title,'play:'+t.id)])),\n      button('Volver al inicio','home')];\n  }\n  const result={state,view:column(content)};\n  if(play) result.play=play;\n  return result;\n}\n"
+}

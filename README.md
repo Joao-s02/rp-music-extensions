@@ -77,3 +77,9 @@ Publicación 0.3.5 confirmada: https://github.com/Joao-s02/rp_music/releases/tag
 Opción experimental separada de YouTube Android 0.4.0. Ambas pueden instalarse; elegir cuál controla Fuente o pulsar Usar esta fuente. La estable se conserva intacta. [Paquete Explorador](previews/explorer-0.1.0/youtube-explorer.rpmx) · [Uso y límites](previews/explorer-0.1.0/README.md).
 
 Añade exploración pública de artistas/álbumes/listas y paginación; permite importar álbum/lista cargados como copia local independiente, sin descargar audio automáticamente. No incluye cuenta Google ni sincronización; no promete discografía exhaustiva. Android solamente para reproducción del proveedor. No se adjunta a releases de la app. Verificaciones y límites en [resultados](tests/RESULTADOS-explorer-local.md).
+
+## Laboratorio JS 0.1.0 — para RP Music 0.3.8+
+
+Extensión experimental API 3/JavaScript, separada de las extensiones Dart. [Paquete](previews/js-lab-0.1.0/laboratorio-js.rpmx) · [Uso](previews/js-lab-0.1.0/README.md) · [Verificaciones](tests/RESULTADOS-js-lab-local.md).
+
+Define tres páginas con formulario, contador persistente y búsqueda/reproducción local autorizada. Instalar desde catálogo y pulsar Abrir pantalla. No sustituye Fuente: YouTube estable y Explorador permanecen intactas con Dart. No es Node.js ni HTML/CSS libre; sin red ni conexión de cuenta en API 3. La versión de la app se publica por separado; no se incluye esta extensión dentro de sus binarios.

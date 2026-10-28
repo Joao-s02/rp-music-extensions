@@ -40,5 +40,8 @@ if local.exists():
 explorer = root / 'previews/explorer-0.1.0/youtube-explorer.rpmx'
 if explorer.exists():
     rows.append(entry(explorer))
+js_lab = root / 'previews/js-lab-0.1.0/laboratorio-js.rpmx'
+if js_lab.exists():
+    rows.append(entry(js_lab))
 (root / "catalog.json").write_text(json.dumps({"schemaVersion": 1, "extensions": rows}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(f"Catálogo actualizado: {len(rows)} extensiones")
