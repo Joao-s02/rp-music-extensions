@@ -15,3 +15,5 @@ Límite hallado/corregido: depuración Windows con pila QuickJS predeterminada 2
 Fuentes primarias: https://docs.radio-browser.info/ y https://ytmusicapi.readthedocs.io/en/stable/reference/browsing.html . Sin credenciales/cuentas; solo datos públicos. Estado propuesto de firmas/aislamiento de proceso no cambia por estas pruebas.
 
 Cierre de binarios del anfitrión: APK universal normal0.3.9/código18/firma v2 compatible/tres ABI y Windows normal0.3.9+18/ZIP21 archivos con QuickJS/guía. Compilación Windows63.3s/Android185.9s. Salidas y hashes en dist/0.3.9-local del anfitrión; paquetes de extensiones conservados fuera de ambos binarios. Android físico pendiente. Sin publicación/push.
+
+Publicación posterior confirmada 2026-10-28: [RP Music0.3.9-alpha.1](https://github.com/Joao-s02/rp_music/releases/tag/v0.3.9-alpha.1), app0.3.9+18. Catálogo de ocho opciones y paquetes nuevos verificados con cliente real; siete adjuntos de app comprobados por tamaño/SHA256 en borrador y publicación. Android físico y audio nativo YouTube Windows siguen pendientes. Etapas locales anteriores conservadas como antecedentes.

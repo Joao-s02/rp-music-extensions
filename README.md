@@ -93,3 +93,5 @@ Añade exploración pública de artistas/álbumes/listas y paginación; permite 
 Extensión experimental API 3/JavaScript, separada de las extensiones Dart. [Paquete](previews/js-lab-0.1.0/laboratorio-js.rpmx) · [Uso](previews/js-lab-0.1.0/README.md) · [Verificaciones](tests/RESULTADOS-js-lab-local.md).
 
 Define tres páginas con formulario, contador persistente y búsqueda/reproducción local autorizada. Instalar desde catálogo y pulsar Abrir pantalla. No sustituye Fuente: YouTube estable y Explorador permanecen intactas con Dart. No es Node.js ni HTML/CSS libre; sin red ni conexión de cuenta en API 3. La versión de la app se publica por separado; no se incluye esta extensión dentro de sus binarios.
+
+Publicación posterior confirmada 2026-10-28: [RP Music0.3.9-alpha.1](https://github.com/Joao-s02/rp_music/releases/tag/v0.3.9-alpha.1), app0.3.9+18. Catálogo de ocho opciones y paquetes nuevos verificados con cliente real; siete adjuntos de app comprobados por tamaño/SHA256 en borrador y publicación. Android físico y audio nativo YouTube Windows siguen pendientes. Etapas locales anteriores conservadas como antecedentes.
