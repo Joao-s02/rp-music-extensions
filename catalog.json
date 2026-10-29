@@ -83,6 +83,15 @@
           "minAppVersion": "0.3.11",
           "path": "previews/0.3.11/youtube-music-android.rpmx",
           "sha256": "b14c080affa9656c3388c4f1aebebf0e5bbc359d5d38bde31b3d269e94d6809b"
+        },
+        {
+          "id": "rp.youtube-music",
+          "name": "YouTube Music experimental",
+          "version": "0.5.1",
+          "description": "Prioriza letras sincronizadas de la misma interpretación sin cambiar la identidad del álbum. App 0.3.12. Candidato local.",
+          "minAppVersion": "0.3.12",
+          "path": "previews/0.3.12/youtube-music-android.rpmx",
+          "sha256": "1ade73f3b2cd2e3c929728a5eda5a33a62c0ba2a642f78c780753fb1eeecb3e2"
         }
       ]
     },
@@ -93,7 +102,18 @@
       "description": "Busca letras automáticamente al reproducir canciones locales sin letra. Solo guarda en la app; no modifica tu música.",
       "minAppVersion": "0.3.5",
       "path": "previews/0.3.5/letras-locales.rpmx",
-      "sha256": "849e6868b1b964e4a6c0f9d85f4f0ef432ac4e36e87f29ccb443b24a4ecaf98c"
+      "sha256": "849e6868b1b964e4a6c0f9d85f4f0ef432ac4e36e87f29ccb443b24a4ecaf98c",
+      "versions": [
+        {
+          "id": "rp.letras-locales",
+          "name": "Letras locales",
+          "version": "0.1.1",
+          "description": "Prioriza letras sincronizadas de la misma interpretación sin cambiar la identidad del álbum. App 0.3.12. Candidato local.",
+          "minAppVersion": "0.3.12",
+          "path": "previews/0.3.12/letras-locales.rpmx",
+          "sha256": "67a821c506995456ccb6f7fc76fad29fe8c0f39751708595484740a5b33d6fac"
+        }
+      ]
     },
     {
       "id": "rp.youtube-explorer",
@@ -112,6 +132,15 @@
           "minAppVersion": "0.3.11",
           "path": "previews/0.3.11/youtube-explorer.rpmx",
           "sha256": "17bd5a9086a9e17ed86c4e16bd0b40d9e57a98c92d8078fe5e6520d1bb1811dc"
+        },
+        {
+          "id": "rp.youtube-explorer",
+          "name": "YouTube Explorador",
+          "version": "0.2.1",
+          "description": "Prioriza letras sincronizadas de la misma interpretación sin cambiar la identidad del álbum. App 0.3.12. Candidato local.",
+          "minAppVersion": "0.3.12",
+          "path": "previews/0.3.12/youtube-explorer.rpmx",
+          "sha256": "6908b53ca9e917232ab73528e004020577efded7ab113416ec701607e2d85194"
         }
       ]
     },
@@ -170,6 +199,15 @@
           "minAppVersion": "0.3.11",
           "path": "previews/0.3.11/youtube-music-windows.rpmx",
           "sha256": "4be45ea7cf3629589d59e6a4b0408bc74e6727f5b47556b36e918f7d63533587"
+        },
+        {
+          "id": "rp.youtube-music-windows",
+          "name": "YouTube Windows",
+          "version": "0.5.1",
+          "description": "Prioriza letras sincronizadas de la misma interpretación sin cambiar la identidad del álbum. App 0.3.12. Candidato local.",
+          "minAppVersion": "0.3.12",
+          "path": "previews/0.3.12/youtube-music-windows.rpmx",
+          "sha256": "b40d4e0dec89e04523e863bac93301167597ce72b75aa709049e59058f2b4992"
         }
       ]
     },
@@ -190,6 +228,15 @@
           "minAppVersion": "0.3.11",
           "path": "previews/0.3.11/youtube-explorer-windows.rpmx",
           "sha256": "bede57134005eb48dac2a8d1d1dd47e486e39322a5731c3e0b25013428fc7fbd"
+        },
+        {
+          "id": "rp.youtube-explorer-windows",
+          "name": "YouTube Explorador Windows",
+          "version": "0.2.1",
+          "description": "Prioriza letras sincronizadas de la misma interpretación sin cambiar la identidad del álbum. App 0.3.12. Candidato local.",
+          "minAppVersion": "0.3.12",
+          "path": "previews/0.3.12/youtube-explorer-windows.rpmx",
+          "sha256": "95c8afea65bdd7130e35320c8aaf897d54c4a6b0cc5eafdd338a4e7a3f5dd59a"
         }
       ]
     }
