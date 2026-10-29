@@ -1,5 +1,9 @@
 # Extensiones de RP Music
 
+## RP Music0.3.16 — actualización de catálogo
+
+previews/0.3.16 contiene YouTube Android/Windows0.5.3, Explorador Android/Windows0.2.3 y Explorador JS0.1.1, todos con minApp0.3.16. Disponibles en el catálogo; variantes anteriores conservadas. build_0316.py regenera paquetes/hashes sin modificar versiones previas. Metadatos: identificación por vídeo exacto como respaldo, álbumes/singles/EP oficiales y portadas1200 de edición/grupo; se conserva el contexto del álbum. Caché pública optativa de60s en navegación JS. verify_0316.dart prueba los cuatro paquetes Dart, incluyendo MusicBrainz503 con respaldo de origen. Requiere verificar disponibilidad real y Android físico.
+
 ## Para RP Music0.3.12
 
 En previews/0.3.12: YouTube Android/Windows0.5.1, Explorador Android/Windows0.2.1 y Letras locales0.1.1, app mínima0.3.12. Priorizan LRC frente a texto plano entre interpretaciones compatibles; consulta alternativa y conservación del texto ante fallo; duración numérica y álbum de origen intacto. Regenerar con build_0312.py; lógica común sources/lyrics_result_0312.dart. tests/verify_0312.dart prueba cinco paquetes en dart_eval; live_lyrics_0312.dart confirma consulta pública. Escenario nativo del anfitrión en tests/lyrics-download-0312.json. Actualizaciones en catálogo, con variantes/paquetes anteriores preservados.

@@ -101,6 +101,15 @@
           "minAppVersion": "0.3.13",
           "path": "previews/0.3.13/youtube-music-android.rpmx",
           "sha256": "709080d1204c5877d140ed6387c38799390c574461adbd094bff22b2786b79ff"
+        },
+        {
+          "id": "rp.youtube-music",
+          "name": "YouTube Music experimental",
+          "version": "0.5.3",
+          "description": "Álbumes de canciones sueltas con respaldo de origen, singles/EP y portadas hasta 1200px de la edición o grupo identificado.",
+          "minAppVersion": "0.3.16",
+          "path": "previews/0.3.16/youtube-music-android.rpmx",
+          "sha256": "9210a76af52e763a5703959cd6a6cab1f8fac6cc5ed91113ed32eca48eef84a5"
         }
       ]
     },
@@ -159,6 +168,15 @@
           "minAppVersion": "0.3.13",
           "path": "previews/0.3.13/youtube-explorer.rpmx",
           "sha256": "b0ce92f36f920238142b9de3a127ac3e9f10f082f29f41a31a4aefb4c6b2e66d"
+        },
+        {
+          "id": "rp.youtube-explorer",
+          "name": "YouTube Explorador",
+          "version": "0.2.3",
+          "description": "Álbumes de canciones sueltas con respaldo de origen, singles/EP y portadas hasta 1200px de la edición o grupo identificado.",
+          "minAppVersion": "0.3.16",
+          "path": "previews/0.3.16/youtube-explorer.rpmx",
+          "sha256": "397d5f1c7b9eddaf9d3f53608f748ef045aaae0af1b89897af80e2001a5400b1"
         }
       ]
     },
@@ -178,7 +196,18 @@
       "description": "Explora artistas, álbumes, listas y canciones públicas de YouTube Music. Sin cuenta; audio experimental.",
       "minAppVersion": "0.3.9",
       "path": "previews/js-music-0.1.0/explorador-musical.rpmx",
-      "sha256": "62c330d24ba7bdc64dfe6ea0d98b125cb2632c74017b158bd7f42dc37382e61e"
+      "sha256": "62c330d24ba7bdc64dfe6ea0d98b125cb2632c74017b158bd7f42dc37382e61e",
+      "versions": [
+        {
+          "id": "rp.explorador-musical-js",
+          "name": "Explorador musical",
+          "version": "0.1.1",
+          "description": "Explora artistas, álbumes, listas y canciones públicas de YouTube Music. Sin cuenta; audio experimental.",
+          "minAppVersion": "0.3.16",
+          "path": "previews/0.3.16/explorador-musical.rpmx",
+          "sha256": "54e6377b34966bd2cc3c605c89af0b8ccf594f0b46c99810abf97ab68a28efd6"
+        }
+      ]
     },
     {
       "id": "rp.radio-internet-js",
@@ -235,6 +264,15 @@
           "minAppVersion": "0.3.13",
           "path": "previews/0.3.13/youtube-music-windows.rpmx",
           "sha256": "70137364294df62ec35c609955c2e07825156694690ad40ed7292aceb5e9d595"
+        },
+        {
+          "id": "rp.youtube-music-windows",
+          "name": "YouTube Windows",
+          "version": "0.5.3",
+          "description": "Álbumes de canciones sueltas con respaldo de origen, singles/EP y portadas hasta 1200px de la edición o grupo identificado.",
+          "minAppVersion": "0.3.16",
+          "path": "previews/0.3.16/youtube-music-windows.rpmx",
+          "sha256": "53ebf92d91ba51bca7edb706b0673f75385ef4ae68ba3ebf23b71f30dda1ad2b"
         }
       ]
     },
@@ -273,6 +311,15 @@
           "minAppVersion": "0.3.13",
           "path": "previews/0.3.13/youtube-explorer-windows.rpmx",
           "sha256": "f9ceecbba79ddc31f8750b43a61967342e89c697e073e19b1c21f4272c6e6987"
+        },
+        {
+          "id": "rp.youtube-explorer-windows",
+          "name": "YouTube Explorador Windows",
+          "version": "0.2.3",
+          "description": "Álbumes de canciones sueltas con respaldo de origen, singles/EP y portadas hasta 1200px de la edición o grupo identificado.",
+          "minAppVersion": "0.3.16",
+          "path": "previews/0.3.16/youtube-explorer-windows.rpmx",
+          "sha256": "a57581674209a2ff3c10f3ea5970500b21f06a4c4cce126432dac2cd700658a6"
         }
       ]
     }
