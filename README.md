@@ -111,3 +111,9 @@ Extensión experimental API 3/JavaScript, separada de las extensiones Dart. [Paq
 Define tres páginas con formulario, contador persistente y búsqueda/reproducción local autorizada. Instalar desde catálogo y pulsar Abrir pantalla. No sustituye Fuente: YouTube estable y Explorador permanecen intactas con Dart. No es Node.js ni HTML/CSS libre; sin red ni conexión de cuenta en API 3. La versión de la app se publica por separado; no se incluye esta extensión dentro de sus binarios.
 
 Publicación posterior confirmada 2026-10-28: [RP Music0.3.9-alpha.1](https://github.com/Joao-s02/rp_music/releases/tag/v0.3.9-alpha.1), app0.3.9+18. Catálogo de ocho opciones y paquetes nuevos verificados con cliente real; siete adjuntos de app comprobados por tamaño/SHA256 en borrador y publicación. Android físico y audio nativo YouTube Windows siguen pendientes. Etapas locales anteriores conservadas como antecedentes.
+
+## Para RP Music0.3.13
+
+previews/0.3.13: YouTube Android/Windows0.5.2 y Explorador Android/Windows0.2.2. Recuperan álbum oficial cuando la búsqueda no entrega álbum, conservando LRC y lotes. build_0313.py, tests/verify_0313.dart y tests/live_metadata_0313.dart. Actualizaciones disponibles en catálogo, conservando versiones anteriores.
+
+Verificación0.3.13: cuatro paquetes reales con álbum conocido/desconocido, respuesta invertida, campos opcionales, duración compatible/incompatible, LRC y lote conservados. Descarga nativa Windows: Busca Una Mujer, pista5 y55 líneas incrustadas, audio reproducible y bloques mdat conservados. TLS/503 intermitentes documentados; catálogo actualizado.

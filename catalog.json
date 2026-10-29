@@ -92,6 +92,15 @@
           "minAppVersion": "0.3.12",
           "path": "previews/0.3.12/youtube-music-android.rpmx",
           "sha256": "1ade73f3b2cd2e3c929728a5eda5a33a62c0ba2a642f78c780753fb1eeecb3e2"
+        },
+        {
+          "id": "rp.youtube-music",
+          "name": "YouTube Music experimental",
+          "version": "0.5.2",
+          "description": "Recupera el álbum de una grabación compatible; conserva letras sincronizadas e identidad de descargas de álbum. Candidato local 0.3.13.",
+          "minAppVersion": "0.3.13",
+          "path": "previews/0.3.13/youtube-music-android.rpmx",
+          "sha256": "709080d1204c5877d140ed6387c38799390c574461adbd094bff22b2786b79ff"
         }
       ]
     },
@@ -141,6 +150,15 @@
           "minAppVersion": "0.3.12",
           "path": "previews/0.3.12/youtube-explorer.rpmx",
           "sha256": "6908b53ca9e917232ab73528e004020577efded7ab113416ec701607e2d85194"
+        },
+        {
+          "id": "rp.youtube-explorer",
+          "name": "YouTube Explorador",
+          "version": "0.2.2",
+          "description": "Recupera el álbum de una grabación compatible; conserva letras sincronizadas e identidad de descargas de álbum. Candidato local 0.3.13.",
+          "minAppVersion": "0.3.13",
+          "path": "previews/0.3.13/youtube-explorer.rpmx",
+          "sha256": "b0ce92f36f920238142b9de3a127ac3e9f10f082f29f41a31a4aefb4c6b2e66d"
         }
       ]
     },
@@ -208,6 +226,15 @@
           "minAppVersion": "0.3.12",
           "path": "previews/0.3.12/youtube-music-windows.rpmx",
           "sha256": "b40d4e0dec89e04523e863bac93301167597ce72b75aa709049e59058f2b4992"
+        },
+        {
+          "id": "rp.youtube-music-windows",
+          "name": "YouTube Windows",
+          "version": "0.5.2",
+          "description": "Recupera el álbum de una grabación compatible; conserva letras sincronizadas e identidad de descargas de álbum. Candidato local 0.3.13.",
+          "minAppVersion": "0.3.13",
+          "path": "previews/0.3.13/youtube-music-windows.rpmx",
+          "sha256": "70137364294df62ec35c609955c2e07825156694690ad40ed7292aceb5e9d595"
         }
       ]
     },
@@ -237,6 +264,15 @@
           "minAppVersion": "0.3.12",
           "path": "previews/0.3.12/youtube-explorer-windows.rpmx",
           "sha256": "95c8afea65bdd7130e35320c8aaf897d54c4a6b0cc5eafdd338a4e7a3f5dd59a"
+        },
+        {
+          "id": "rp.youtube-explorer-windows",
+          "name": "YouTube Explorador Windows",
+          "version": "0.2.2",
+          "description": "Recupera el álbum de una grabación compatible; conserva letras sincronizadas e identidad de descargas de álbum. Candidato local 0.3.13.",
+          "minAppVersion": "0.3.13",
+          "path": "previews/0.3.13/youtube-explorer-windows.rpmx",
+          "sha256": "f9ceecbba79ddc31f8750b43a61967342e89c697e073e19b1c21f4272c6e6987"
         }
       ]
     }

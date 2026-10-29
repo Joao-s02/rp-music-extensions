@@ -1,0 +1,8 @@
+{
+  "package": "previews/0.3.13/youtube-explorer-windows.rpmx",
+  "query": "La Incondicional Luis Miguel",
+  "titleContains": "La Incondicional",
+  "unknownAlbum": true,
+  "expectedAlbum": "Busca Una Mujer",
+  "report": "../0.3.13-native-metadata.json"
+}
